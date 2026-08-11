@@ -3,17 +3,21 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [Header("Target")]
-    [SerializeField] private Transform target;
+    [SerializeField] 
+    private Transform target;
 
     [Header("Movement")]
     [SerializeField]
     private Vector3 offset = new Vector3(0f, 8f, -8f);
 
-    [SerializeField] private float smoothTime = 0.2f;
+    [SerializeField] 
+    private float smoothTime = 0.2f;
 
     [Header("Rotation")]
-    [SerializeField] private bool lookAtTarget = true;
-    [SerializeField] private float rotationSpeed = 8f;
+    [SerializeField] 
+    private bool lookAtTarget = true;
+    [SerializeField] 
+    private float rotationSpeed = 8f;
 
     private Vector3 currentVelocity;
 

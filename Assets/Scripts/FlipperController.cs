@@ -4,15 +4,20 @@ using UnityEngine;
 public class FlipperController : MonoBehaviour
 {
     [Header("Input")]
-    [SerializeField] private KeyCode controlKey = KeyCode.LeftArrow;
+    [SerializeField] 
+    private KeyCode controlKey = KeyCode.LeftArrow;
 
     [Header("Angles")]
-    [SerializeField] private float releasedAngle = 0f;
-    [SerializeField] private float pressedAngle = 45f;
+    [SerializeField] 
+    private float releasedAngle = 0f;
+    [SerializeField] 
+    private float pressedAngle = 45f;
 
     [Header("Spring")]
-    [SerializeField] private float springForce = 12000f;
-    [SerializeField] private float springDamper = 300f;
+    [SerializeField] 
+    private float springForce = 12000f;
+    [SerializeField] 
+    private float springDamper = 300f;
 
     private HingeJoint hingeJoint;
     private bool isPressed;

@@ -3,11 +3,14 @@ using UnityEngine;
 public class BumperController : MonoBehaviour
 {
     [Header("Bumper")]
-    [SerializeField] private float impulseForce = 10f;
-    [SerializeField] private int scoreValue = 100;
+    [SerializeField] 
+    private float impulseForce = 10f;
+    [SerializeField] 
+    private int scoreValue = 100;
 
     [Header("Optional Audio")]
-    [SerializeField] private AudioSource hitSound;
+    [SerializeField] 
+    private AudioSource hitSound;
 
     private void OnCollisionEnter(Collision collision)
     {

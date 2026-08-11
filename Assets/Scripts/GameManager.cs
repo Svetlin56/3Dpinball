@@ -7,17 +7,24 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [Header("Ball")]
-    [SerializeField] private BallController ball;
-    [SerializeField] private Transform ballSpawnPoint;
-    [SerializeField] private float respawnDelay = 1f;
+    [SerializeField] 
+    private BallController ball;
+    [SerializeField] 
+    private Transform ballSpawnPoint;
+    [SerializeField] 
+    private float respawnDelay = 1f;
 
     [Header("Game")]
-    [SerializeField] private int startingLives = 3;
-    [SerializeField] private KeyCode restartKey = KeyCode.R;
+    [SerializeField] 
+    private int startingLives = 3;
+    [SerializeField] 
+    private KeyCode restartKey = KeyCode.R;
 
     [Header("Display")]
-    [SerializeField] private bool showGameStatusOnScreen = true;
-    [SerializeField] private int fontSize = 28;
+    [SerializeField] 
+    private bool showGameStatusOnScreen = true;
+    [SerializeField] 
+    private int fontSize = 28;
 
     public int Lives { get; private set; }
     public bool IsGameOver { get; private set; }

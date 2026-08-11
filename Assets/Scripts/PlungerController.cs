@@ -3,15 +3,20 @@ using UnityEngine;
 public class PlungerController : MonoBehaviour
 {
     [Header("Input")]
-    [SerializeField] private KeyCode launchKey = KeyCode.Space;
+    [SerializeField] 
+    private KeyCode launchKey = KeyCode.Space;
 
     [Header("Launch Direction")]
-    [SerializeField] private Transform launchDirection;
+    [SerializeField] 
+    private Transform launchDirection;
 
     [Header("Launch Force")]
-    [SerializeField] private float minimumLaunchForce = 4f;
-    [SerializeField] private float maximumLaunchForce = 18f;
-    [SerializeField] private float maximumChargeTime = 1.5f;
+    [SerializeField] 
+    private float minimumLaunchForce = 4f;
+    [SerializeField] 
+    private float maximumLaunchForce = 18f;
+    [SerializeField] 
+    private float maximumChargeTime = 1.5f;
 
     private Rigidbody currentBall;
     private float chargeTime;

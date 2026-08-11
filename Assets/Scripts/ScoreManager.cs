@@ -6,9 +6,12 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance { get; private set; }
 
     [Header("Score Display")]
-    [SerializeField] private bool showScoreOnScreen = true;
-    [SerializeField] private Vector2 screenPosition = new Vector2(20f, 20f);
-    [SerializeField] private int fontSize = 28;
+    [SerializeField] 
+    private bool showScoreOnScreen = true;
+    [SerializeField] 
+    private Vector2 screenPosition = new Vector2(20f, 20f);
+    [SerializeField] 
+    private int fontSize = 28;
 
     public int CurrentScore { get; private set; }
 
